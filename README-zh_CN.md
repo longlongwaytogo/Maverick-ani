@@ -41,6 +41,12 @@ vi ./demo_src/config.py
 python3 mvrk.py --config ./demo_src/config.py --source_dir ./demo_src/ --build_dir ./dist/
 ```
 
+```python
+python3 mvrk.py --config ./demo_src/config.py --source_dir ./demo_src/ --build_dir ./docs/
+```
+
+
+
 ...在 `dist` 文件夹中生成了一个示例静态站点！ 你可以把它们上传到 GitHub Pages 或者其他的服务器。
 
 ### Generate your own site | 生成自己的网站
@@ -287,7 +293,7 @@ template = 'Galileo' # or 'Kepler'
 ```
 
    你需要在 config.py 文件中将 `template` 设置为下面这样：
-   
+
 ```python
 template = {
     "name": "MyTheme",
